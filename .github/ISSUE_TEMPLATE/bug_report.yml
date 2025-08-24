@@ -1,50 +1,47 @@
+version: 1
 name: "🐞 Bug report"
 description: Report a reproducible problem
 title: "[Bug] <short summary>"
 labels: [bug, needs-triage]
 body:
 - type: textarea
-id: steps
-attributes:
-label: Steps to Reproduce
-placeholder: "1. Go to...\n2. Click...\n3. See error..."
-validations:
-required: true
-
-
-- type: textarea
-id: expected
-attributes:
-label: Expected Behavior
-validations:
-required: true
-
+  id: steps
+  attributes:
+    label: Steps to Reproduce
+    placeholder: "1. Go to...\n2. Click...\n3. See error..."
+  validations:
+    required: true
 
 - type: textarea
-id: actual
-attributes:
-label: Actual Behavior
-validations:
-required: true
+  id: expected
+  attributes:
+    label: Expected Behavior
+  validations:
+    required: true
 
+- type: textarea
+  id: actual
+  attributes:
+    label: Actual Behavior
+  validations:
+    required: true
 
 - type: input
-id: version
-attributes:
-label: Affected Version/Commit
-placeholder: "e.g., v1.2.3 or abc1234"
-validations:
-required: true
-
+  id: version
+  attributes:
+    label: Affected Version/Commit
+    placeholder: "e.g., v1.2.3 or abc1234"
+  validations:
+    required: true
 
 - type: dropdown
-id: area
-attributes:
-label: Area
-options:
-- frontend
-- backend
-- infra
-- docs
-validations:
-required: true
+  id: area
+  attributes:
+    label: Area
+    options:
+      - frontend
+      - backend
+      - infra
+      - docs
+  validations:
+    required: true
