@@ -3,34 +3,31 @@ description: Suggest an idea or improvement
 title: "[Feat] <short summary>"
 labels: [enhancement, needs-triage]
 body:
-- type: textarea
-id: problem
-attributes:
-label: Problem / Use Case
-placeholder: "What problem would this solve?"
-validations:
-required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem / Use Case
+      placeholder: "What problem would this solve?"
+    validations:
+      required: true
 
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed Solution
+      placeholder: "Describe the solution you’d like."
+    validations:
+      required: true
 
-- type: textarea
-id: proposal
-attributes:
-label: Proposed Solution
-placeholder: "Describe the solution you’d like."
-validations:
-required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
 
-
-- type: textarea
-id: alternatives
-attributes:
-label: Alternatives Considered
-
-
-- type: dropdown
-id: impact
-attributes:
-label: Impact
-options: [low, medium, high, critical]
-validations:
-required: true
+  - type: dropdown
+    id: impact
+    attributes:
+      label: Impact
+      options: [low, medium, high, critical]
+    validations:
+      required: true
