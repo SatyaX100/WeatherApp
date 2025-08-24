@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+- name: 💬 Questions / Help
+url: https://github.com/<org>/<repo>/discussions
+about: Use Discussions for Q&A and general help.
+- name: 🔒 Security reports
+url: https://github.com/<org>/<repo>/security/policy
+about: Please report vulnerabilities via our security policy.
